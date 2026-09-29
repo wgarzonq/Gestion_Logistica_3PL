@@ -1,4 +1,4 @@
-# Gestión Logóstica-3PL
+# Gestión Logística 3PL
 Proyecto de software para los procesos de gestión logística de terceros.
 ## Autor: William David Garzón Quevedo (100223601)
 ## Institución: Universidad Corporación Universitaria Iberoamericana
