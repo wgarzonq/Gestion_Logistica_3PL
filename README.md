@@ -1,83 +1,78 @@
 # Gestión Logística 3PL
-Proyecto de software para los procesos de gestión logística de terceros.
+Proyecto de software para los procesos de gestión logística de terceros; facilitando la distribución de medicamentos.
 ## Autor: William David Garzón Quevedo (100223601)
 ## Institución: Universidad Corporación Universitaria Iberoamericana
 ## Programa: Ingeniería de Software
 ## Curso: Proyecto de Software
 
-### Descripción del Problema
-Para empezar ¿porque se está hablando directamente de la logística 3PL? La logística 3PL o logística de terceros, es un servicio donde por medio de una cadena de procesos para la gestión de mercancías no propias de la empresa, se le colabora a fabricantes o distribuidores a suplir las demandas de entrega de sus productos, siendo de alta demanda por las fábricas de productos de primera necesidad, donde al ser requeridos con frecuencia, sus propias bodegas no dan abasto en cubrir los tiempos de entrega de la mercancía solicitada. Un claro ejemplo de ello, es el suministro de los medicamentos, sea para la venta al público como para los dispensarios afiliados a una EPS; los servicios de logística 3PL dan una mano para que lleguen dichos productos en las condiciones recomendadas a las estaciones de distribución final.
+## Objetivo General
 
-Una de las razones por las que se cree que no se satisface la demanda en la distribución en este caso de los medicamentos siendo también problemática en la gestión logística de la mayoría de las empresas en Colombia, es delegarle todas las tareas al Excel de la mano también de Power Bi. Excel es una herramienta como lo puede ser un destornillador, una segueta, un multímetro, entre otros, que nos ayuda a realizar una tarea concreta, pero por más útil que sea una herramienta no se abarcara en su totalidad la necesidad del usuario; en Excel se puede organizar, analizar y calcular los datos en poco tiempo; siendo la favorita de muchos, en el que aparte ver los cálculos hechos de manera inmediata, tiene una curva de aprendizaje sencilla; además siendo propiedad de Microsoft, que es la primera empresa de software que se nos viene a la cabeza al referirnos un dispositivo de cómputo.
-Excel lleva de vigencia desde 1985, habiendo actualizaciones hasta el presente destacando la automatización de procesos por medio del desarrollo de soluciones mediante el lenguaje de programación Visual Basic, configurando macros donde sus resultados generan un falso confort (explicado más adelante) que se suplió una necesidad; por eso mismo, están a la orden del día las ofertas laborales requiriendo expertos en el manejo de dicha herramienta. 
-Volviendo a citar el tema de la demanda logística donde las operaciones crecen de forma exponencial; siendo la tecnología un causante de esto, porque los productos se adquieren desde la comodidad de nuestras casas u oficinas, aquí es donde Excel presenta las siguientes falencias.
+Desarrollar y validar un producto mínimo viable sobre la logística de terceros para la dispensación de medicamentos de forma oportuna que centralice la información operacional, permitiendo controlar los procesos prioritarios del movimiento y alistamiento de las mercancías, facilitando la consulta y la trazabilidad transparente.
 
--	Falta de coordinación al manejar un solo archivo entre varios usuarios, Excel permite el trabajo conjunto por medio de un SharePoint en el proyecto, cuando se trabaja con 3 o mas personas, dicho enlace no soporta la cantidad de trabajo sincrónico habiendo perdida en la conexión; trabajando con macros, incluso con 2 personas, el trabajo sincrónico es nulo.
-  
--	Información dispersa, con base al inciso anterior al haber esa perdida de conexión, el archivo hace un respaldo hasta cierto punto donde la comunicación era estable, esto genera ramificaciones al haber nuevos cambios ocasionando incertidumbre cual es el archivo original.
-  
--	El archivo no es flexible a una alta demanda.
-  
--	Presenta graves vulneraciones en la seguridad porque Excel al ser generalizado se permite que se comparta la información confidencial sin ningún tipo de restricción.
+## Objetivos Específicos 
 
-Competir contra Excel es una tarea imposible, lo que buscara el proyecto de software a realizar es brindar un espacio centrado en los procesos de la logística 3PL como lo son: recepción de productos por el fabricante, inventario, picking y packing, cross-docking, embalaje, despacho de carga, entre otros. Donde no se recargue las labores de control al “Mago del Excel”, sino que sea un producto disponible para todo miembro de la empresa, garantizando la estabilidad de la operación y la seguridad en el tratamiento de datos.
+-	Identificar los requerimientos funcionales y no funcionales de los procesos logísticos seleccionados.
+-	Diseñar la arquitectura de software, el modelo de datos y las interfaces necesarias para la gestión centralizada de la información.
+-	Implementar tanto los módulos de autenticación de los usuarios como los módulos para los procesos de recepción a la bodega, movimientos, pedidos, alistamientos y despachos de las mercancías.
+-	Permitir que se importen procesos anteriores realizados mediante Excel, organizando la información para que sea compatible con la estructura del sistema.
+-	Evaluar el funcionamiento del producto mediante pruebas de funcionalidad, seguridad básica, integridad de datos y rendimiento.
 
-### Justificación
-Necesitamos de la solución de software a formular, es que tenga la agilidad en los procesos logísticos,  Entendiendo la producción actual, analizando las métricas en cada uno de los procesos que se realizan en la bodega, incluso observando los controles que se llevan en las documentaciones hechas en Excel; habilitando un espacio dentro del propio aplicativo para migrar esa información sin empezar todo el proceso logístico desde 0, haciendo ver a las empresas que en vez de ser un gasto más es una buena inversión a futuro. Lo ideado seria que el servicio lógico a ofrecer sea una plantilla especializada en la logística 3PL, donde no solo una empresa puntual sea su usuaria, sino que sea de amplia distribución entre empresas competidoras; como en el caso que se distribuyan productos farmacéuticos, entre más agilidad haya en las bodegas logísticas, se salvaran más vidas.
+## Diagrama de Desglose EDT
 
-No se piensa como un proyecto cómodo para el desarrollador, como se indicó en la problemática, hay dolencias que están en la cotidianidad donde la oportunidad de digitalizar un proceso concreto, no requerirá estrictamente de procesos como: Machine Learning, IOT, Blockchain, entre muchas más innovaciones; que no son completamente descartables para lo que se quiere lograr, sino que se da a entender que con una solución tecnológica estable se puede lograr agilizar la productividad de las industrias.
-Cuando se formuló el planteamiento con la empresa ficticia, se enfocó el manejo de los datos por medio de un gestor NoSQL que no se necesita una estructura de datos rígida como a comparación de la empresas de logística 5PL, donde la toma de decisiones necesita más rigurosidad estratégica; como nos estamos enfocando solo en la logística 3PL, solo se necesita que se cumplan los tiempos en el control de los procesos, donde al no tener flexibilidad y disponibilidad de los datos en cualquier momento, ocasiona el represado de mercancía ya lista generando que se cumplan fechas de vencimiento o que los productos en caso que necesiten una refrigeración determinada; se almacenen en condiciones no apropiadas.
+<img width="1024" height="768" alt="Image" src="https://github.com/user-attachments/assets/09d39562-4671-445c-8dcd-f662d5f40290" />
 
-Si, al realizar la estructura de base de datos en NoSQL se puede generar dispersión de datos al no haber un esquemático definido en los registros, lo habrán, también teniendo esta situación en cuenta al materializar el proyecto, porque el pro que no tenga un registro un esquemático definido sirve, ya que al requerir procesos agiles en la gestión de la información solo se registra la información necesaria, sin rebuscar información que no sea relevante para la operación pero permitiéndole al usuario que en caso que quiera adherirla lo puede hacer. 
+## Alcance
 
-La ventaja por la que un modelo de bases de datos no relacional es acorde para el manejo de los procesos en la logística 3PL, es por su escalabilidad horizontal donde al haber una alta demanda se particionan los datos por categorías formando una red robusta, que en el momento de su despliegue al subirla en un servicio como AWS o Azure (por un módico precio), se puede conservar dicha infraestructura otorgando la posibilidad que siga expandiéndose y lo más importante que su contenido esté disponible 24/7. 
-Relacionado a lo escrito, se formula la siguiente pregunta:
-¿Como se gestionan los procesos logísticos de terceros en un sistema flexible que permita su disponibilidad 24/7, donde la dispersión de datos con base a la alta demanda sea mínima?
+El proyecto contempla el análisis, diseño, desarrollo y validación de un producto mínimo viable para la gestión de procesos logísticos de terceros, hacia la distribución de los productos fármacos tanto de necesidad vital como no vital. Permitiendo administrar los productos, controlar el inventario y seguir los pedidos realizados; para el cumplimiento oportuno de las entregas hacia los consumidores.
 
-### Objetivo General
-Establecer un sistema lógico donde los procesos relacionados a la logística de terceros se ejecuten de forma ágil y organizada, para asegurar que la disponibilidad de la información se obtenga las 24 horas del día con los 7 días de la semana, permitiendo un escalamiento horizontal de la estructura de almacenamiento de datos, donde se supla la alta demanda que las empresas de gestión logística tienen que cumplir sobre los procesos a los que se someten sus productos.
+El sistema incluirá la autenticación de los usuarios, control de acceso según sus roles, trazabilidad de las operaciones e importación controlada de la información trabajada previamente mediante archivos con extensión CSV de Excel, siempre que se cumpla la estructura definida predispuesta por el desarrollable.
 
-### Objetivos Especificos
--	Seguir con los controles realizado por medio de Excel con base a los procesos logísticos, permitiendo que se reanude dentro del aplicativo dichos controles hechos a la producción logística con las mejoras propuestas por el sistema, evitando la perdida de datos.
-  
--	Presentar balances automáticos, dejando que el usuario por medio de filtros arme su presentación con lo que requiera en cuanto a la información almacenada como en una galería de diferentes plantillas de balances brindados por el aplicativo, formando gráficos profesionales en segundos permitiendo su respectiva descarga en formatos como: pdf, xls o pptx.
-  
--	Permitir la fluidez desde la experiencia de usuario en la realización de los procesos, evitando dejar los eventos a medias por el hecho de solo funcionar; se debe buscar que la navegación dentro del aplicativo sea amigable con el usuario.
-  
--	Analizar mecanismos de automatización aparte de las automatizaciones valga la redundancia de las operaciones logísticas planteadas, logrando que el mismo sistema le ayude al usuario a tomar las decisiones sobre la distribución de la información; uno de estos mecanismos puede ser Machine Learning.
+### Elementos Fuera del Alcance
 
-### Estructura del Desglose (EDT) 
-<img width="1059" height="1039" alt="Image" src="https://github.com/user-attachments/assets/ca3d080c-a0d7-435b-8b19-a21fac6b8969" />
+Para el producto mínimo viable a desarrollar, solo se buscará que se cumpla los procesos logísticos de terceros básicos, por ello no se contempla el entrenamiento de modelos de Machine Learning y la integración con múltiples ERP.
 
-### Alcance
-¿Cómo será la aplicación de la solución tecnológica, para la gestión de los procesos logísticos 3PL?
+### Restricciones
 
-La implementación del aplicativo consistirá en una plantilla, que tendrá los procesos comunes que se manejan en la logística de terceros como: registro, consulta, modificación y análisis de la información; no estará enfocada a una empresa puntal sino que al finalizar la primera versión se ofrece con sus posteriores actualizaciones a empresas especializadas en la categoría logística a trabajar; porque la disponibilidad de la información flexible es un problema que se da en toda industria y más si solo se depende del Excel.
+-	Tiempo: el desarrollo estará limitado por un periodo de tiempo mayor a 2 meses con trabajo intensivo, desde finales de septiembre del 2026 hasta los comienzos de diciembre del 2026.
+-	Recursos: se utilizarán los recursos humanos, técnicos y económicos disponibles para el equipo de desarrollo.
+-	Infraestructura: la disponibilidad del sistema dependerá de la configuración y continuidad de los servicios externos utilizados.
+-	Funcionalidad: el producto mínimo viable cubrirá únicamente los procesos definidos como prioritarios.
 
-El entregable que se debe esperar es un aplicativo donde los procesos de control se realicen sin ningún tipo de resistencia del mismo, donde se entienda las necesidades del sector logístico permitiendo al usuario al momento de utilizarla que el control sobre el sistema sea intuitivo y ágil, ya que el tiempo es un factor no negociable en la industria colombiana. Buscando descubrir lo que funciona en Excel y Power BI, trayendo esos atributos formando una herramienta robusta donde se requieran los servicios digitales externos de forma mínima, buscando que aparte de realizar los registros, modificaciones y visualización de los datos trabajados; permita desglosar balances profesionales a partir del contenido almacenado.
+### Criterios de Aceptación
 
-Al proponer en uno de los objetivos que se estaría trabajando con Machine Learning para la automatización de procesos y tomas de decisiones por parte del usuario, se estudiaría que ese tipo tecnología ponga a la mano los componentes dentro del aplicativo, descifrando que necesita la operación logística a tratar por el usuario; dependiendo de sí mismo como proceder. Así mismo se podría entrenar el servicio para que distribuya la información almacenada, porque de lo mismo demandante que es el sector logístico, se podría descuidar dicha organización perjudicando no solo el servicio brindado a una sola empresa, sino la estabilidad del modelo de datos en general.
+ El producto mínimo viable será aceptado cuando se demuestre, mediante pruebas documentadas, que:
+-	Los usuarios pueden iniciar sesión y acceder únicamente a las funciones autorizadas para su rol.
+-	Los productos pueden registrarse, consultarse y modificarse correctamente.
+-	Los movimientos de inventario quedan registrados para su posterior consulta.
+-	Las recepciones, despachos y el alistamiento de los pedidos puedan registrarse cambiando de estado según las reglas definidas.
+-	La importación de archivos CSV cargue según lo esperado, informándole al usuario que datos cumplen con la estructura del sistema y cuáles no.
+-	Los reportes presentan información consistente con los registros almacenados.
+-	Las pruebas funcionales definidas para la versión inicial se ejecuten satisfactoriamente y sus resultados queden documentados.
 
-Sera un proyecto dependiente de otras tecnologías como: librerías, servicios de api, o infraestructuras PAAS; que, con el objetivo de la disponibilidad, se trabajará hasta donde se tenga control de los procesos por parte de los desarrolladores, escogiendo herramientas funcionales y estables. Al mencionar esto se hace referencia a lo que pasa con servicios financieros como: Nequi, Bancolombia o Daviplata; que, al tener sus procesos en servicios como AWS, las entidades financieras se quedan con manos cruzadas al haber mantenimientos o caídas de los servicios por parte del servicio PAAS anfitrión. 
-Las referencias que serán citadas en el informe, más la experiencia laboral relacionada a la logística de terceros no abarca en su totalidad la temática, donde en el primer entregable solo se atacara los procesos críticos exigiendo la posibilidad de añadir en las extensiones o en las siguientes versiones, procesos complementarios donde el propio proyecto al ejecutarse en producción, ira retroalimentándose a sí mismo.
+## Cronograma
 
-### Cronograma
-<img width="1042" height="294" alt="Image" src="https://github.com/user-attachments/assets/538b91b6-fe5f-4558-b60f-1b8912fa8ec0" />
-<img width="1050" height="270" alt="Image" src="https://github.com/user-attachments/assets/d23c84c5-278d-4629-9c1f-355d9fd1752e" />
-<img width="1039" height="334" alt="Image" src="https://github.com/user-attachments/assets/e31046c5-1471-43e8-a952-37af377f1b58" />
-<img width="1056" height="339" alt="Image" src="https://github.com/user-attachments/assets/346d8474-7310-4381-87fb-918f46fc1014" />
-<img width="1050" height="578" alt="Image" src="https://github.com/user-attachments/assets/a2d0b471-8507-4032-8ca6-9835598ab75d" />
+El equipo de desarrollo estará conformado por:
+-	1 desarrollador Front-End: Desarrolla e implementa las interfaces gráficas con las que interactúa el usuario.
+-	1 desarrollador Back-End: Encargado de desarrollar la lógica de negocio del lado del servidor, implementar los servicios y las API y gestionar la comunicación entre las interfaces del usuario y la base de datos.
+-	1 analista de datos: Estudia los requerimientos del cliente y del negocio para diseñar una estructura de datos coherente, organizada y eficiente.
+-	1 diseñador UX/ UI: Diseña la experiencia de usuario y la interfaz de usuario, teniendo en cuenta las necesidades, las expectativas y la comodidad de las personas que utilizarán el aplicativo.
+Se define el equipo de desarrollo, porque en la realización del cronograma tanto las fases de trabajo como las actividades, están establecidas mediante la jerarquía presentada en el diagrama de desglose EDT, por ende, cada actividad debe tener una persona responsable en su llevada a cabo y la culminación.
 
-### Matriz de Riesgos
-Listado de los posibles riesgos para ubicarlos en el gráfico:
+<img width="1062" height="333" alt="image" src="https://github.com/user-attachments/assets/0b8c33c8-1360-4a0f-9c77-2fb8607f31c5" />
+<img width="1058" height="338" alt="image" src="https://github.com/user-attachments/assets/1076b690-86e2-44fc-94bd-26b9e5788099" />
+<img width="1053" height="330" alt="image" src="https://github.com/user-attachments/assets/0e04c56a-8bf3-463f-aa78-cb46b73f0bec" />
+<img width="1055" height="331" alt="image" src="https://github.com/user-attachments/assets/0b5f0943-4484-41b9-9ee5-7a1555ddefc6" />
+<img width="1060" height="398" alt="image" src="https://github.com/user-attachments/assets/dfb9d07c-6fd3-43c5-be1c-8866e86cfb1b" />
+<img width="1060" height="400" alt="image" src="https://github.com/user-attachments/assets/4c62673e-ff39-4944-af04-79fd68560f10" />
+<img width="1058" height="694" alt="image" src="https://github.com/user-attachments/assets/87ab9d89-4b31-4e40-878f-970b7f5a9110" />
 
-1.	No abarcar la totalidad de los procesos logísticos de terceros.
-2.	Baches o lag en la usabilidad.
-3.	Caída de los servicios externos de despliegue.
-4.	Dispersión de los datos almacenados.
-5.	Diseño inadecuado de la estructura de la base de datos que genere inconsistencias o dificultades en las consultas.
-6.	Perdida o corrupción de la información en el Excel durante la importación de los archivos.
-7.	Datos insuficientes para el entrenamiento del modelo de Machine Learning.
-8.	Falta de disponibilidad de la información desde el aplicativo.
 
-<img width="994" height="744" alt="Image" src="https://github.com/user-attachments/assets/d0d40e1a-adf3-4267-981f-3443976353b8" />
+
+
+
+
+
+
+
+
+
