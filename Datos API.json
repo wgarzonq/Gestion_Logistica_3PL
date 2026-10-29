@@ -1,0 +1,732 @@
+//Usuarios
+[
+  {
+    "p_nombre": "Carlos",
+    "s_nombre": "Andres",
+    "p_apellido": "Gomez",
+    "s_apellido": "Rodriguez",
+    "t_documento": "CC",
+    "n_documento": "1023456789",
+    "fNacimiento": "15/05/1995",
+    "correo": "carlos.gomez@example.com",
+    "n_telefono": "3001234567",
+    "en_linea": false,
+    "es_admin": false,
+    "habilitado": true,
+    "contra_temporal": false,
+    "fRegistro": "14/10/2026 13:30:00",
+    "contrasena": "Prueba123*"
+  },
+  {
+    "p_nombre": "Laura",
+    "s_nombre": "Camila",
+    "p_apellido": "Martinez",
+    "s_apellido": "Torres",
+    "t_documento": "CC",
+    "n_documento": "52789134",
+    "fNacimiento": "22/08/1998",
+    "correo": "laura.martinez@example.com",
+    "n_telefono": "3109876543",
+    "en_linea": true,
+    "es_admin": false,
+    "habilitado": true,
+    "contra_temporal": false,
+    "fRegistro": "14/10/2026 14:15:00",
+    "contrasena": "Laura456*"
+  },
+  {
+    "p_nombre": "Andres",
+    "s_nombre": "Felipe",
+    "p_apellido": "Ramirez",
+    "s_apellido": "Castro",
+    "t_documento": "CE",
+    "n_documento": "E987654321",
+    "fNacimiento": "03/12/2002",
+    "correo": "andres.ramirez@example.com",
+    "n_telefono": "3204567890",
+    "en_linea": false,
+    "es_admin": false,
+    "habilitado": true,
+    "contra_temporal": false,
+    "fRegistro": "14/10/2026 15:00:00",
+    "contrasena": "Andres789*"
+  },
+  {
+    "p_nombre": "Valentina",
+    "s_nombre": "Maria",
+    "p_apellido": "Perez",
+    "s_apellido": "Vargas",
+    "t_documento": "TI",
+    "n_documento": "1007654321",
+    "fNacimiento": "19/11/2000",
+    "correo": "valentina.perez@example.com",
+    "n_telefono": "3156543210",
+    "en_linea": false,
+    "es_admin": false,
+    "habilitado": true,
+    "contra_temporal": false,
+    "fRegistro": "14/10/2026 16:00:00",
+    "contrasena": "Valentina789*"
+  }
+]
+
+
+//Empresas
+[
+  {
+    "nombre": "Tecnologias Andinas SAS",
+    "n_nit": "901456789-1",
+    "correo": "contacto@tecnologiasandinas.example",
+    "pais": "Colombia",
+    "ciudad": "Bogota",
+    "direccion": "Calle 100 # 15-20",
+    "n_telefono1": "6014567890",
+    "n_telefono2": "3001234567"
+  },
+  {
+    "nombre": "Soluciones Digitales SAS",
+    "n_nit": "900123456-2",
+    "correo": "contacto@solucionesdigitales.example",
+    "pais": "Colombia",
+    "ciudad": "Medellin",
+    "direccion": "Carrera 43A # 1-50",
+    "n_telefono1": "6044567890",
+    "n_telefono2": "3104567890"
+  },
+  {
+    "nombre": "Comercializadora del Norte LTDA",
+    "n_nit": "800234567-3",
+    "correo": "ventas@comercializadoranorte.example",
+    "pais": "Colombia",
+    "ciudad": "Cali",
+    "direccion": "Avenida 6N # 25-30",
+    "n_telefono1": "6025678901",
+    "n_telefono2": ""
+  },
+  {
+    "nombre": "Innovacion Empresarial SAS",
+    "n_nit": "901678234-5",
+    "correo": "info@innovacionempresarial.example",
+    "pais": "Colombia",
+    "ciudad": "Bucaramanga",
+    "direccion": "Calle 36 # 27-15",
+    "n_telefono1": "6076789012"
+  }
+]
+
+
+//Vinculaciones
+[
+  {
+    "vinculado": true,
+    "es_representante": true,
+    "usuario": "ID generado por Mongo",
+    "empresa": "ID generado por Mongo",
+    "fecha": "14/10/2026 13:30:00"
+  },
+  {
+    "vinculado": true,
+    "es_representante": true,
+    "usuario": "ID generado por Mongo",
+    "empresa": "ID generado por Mongo",
+    "fecha": "14/10/2026 13:35:00"
+  },
+  {
+    "vinculado": true,
+    "es_representante": false,
+    "usuario": "ID generado por Mongo",
+    "empresa": "ID generado por Mongo",
+    "fecha": "14/10/2026 14:15:00"
+  },
+  {
+    "vinculado": true,
+    "es_representante": false,
+    "usuario": "ID generado por Mongo",
+    "empresa": "ID generado por Mongo",
+    "fecha": "14/10/2026 15:00:00"
+  }
+]
+
+
+//Productos
+[
+  {
+    "nombre": "Acetaminofen",
+    "categoria": "Medicamento",
+    "descripcion": "Analgesico y antipiretico para aliviar el dolor leve o moderado y reducir la fiebre.",
+    "presentacion": "Tabletas 500 mg",
+    "rsanitario": "INVIMA2024M001",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "marca": "SaludPlus",
+      "laboratorio": "Laboratorios Andinos"
+    }
+  },
+  {
+    "nombre": "Ibuprofeno",
+    "categoria": "Medicamento",
+    "descripcion": "Antiinflamatorio no esteroideo utilizado para aliviar el dolor y reducir la inflamacion.",
+    "presentacion": "Tabletas 400 mg",
+    "rsanitario": "INVIMA2024M002",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "marca": "FarmaVida",
+      "laboratorio": "Biofarma SAS"
+    }
+  },
+  {
+    "nombre": "Vitamina C",
+    "categoria": "Suplemento",
+    "descripcion": "Producto con vitamina C para complementar la ingesta diaria de este nutriente.",
+    "presentacion": "Tabletas 500 mg",
+    "rsanitario": "INVIMA2024M003",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "marca": "NutriSalud",
+      "laboratorio": "Nutricion Integral SAS"
+    }
+  },
+  {
+    "nombre": "Gel Antibacterial",
+    "categoria": "Higiene",
+    "descripcion": "Gel de uso externo para la higiene de las manos.",
+    "presentacion": "Frasco 250 ml",
+    "rsanitario": "NSOC2024M004",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "marca": "HigieneTotal",
+      "laboratorio": "Productos del Valle SAS"
+    }
+  }
+]
+
+
+//Pedidos
+[
+  {
+    "numero": "PED-2026-101",
+    "lote": "LOTE-OCT-101",
+    "fCreacion": "14/10/2026 13:30:00",
+    "fRequerimiento": "20/10/2026",
+    "cantidad": 125,
+    "pUnidad": 3200,
+    "pTotal": 400000,
+    "iva": 76000,
+    "producto": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "observaciones": "Pedido institucional de octubre",
+      "prioridad": "alta",
+      "sede": "Bogota"
+    }
+  },
+  {
+    "numero": "PED-2026-102",
+    "lote": "LOTE-OCT-102",
+    "fCreacion": "14/10/2026 14:15:00",
+    "fRequerimiento": "22/10/2026",
+    "cantidad": 240,
+    "pUnidad": 1850,
+    "pTotal": 444000,
+    "iva": 84360,
+    "producto": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "observaciones": "Abastecimiento para inventario",
+      "prioridad": "media",
+      "sede": "Medellin"
+    }
+  },
+  {
+    "numero": "PED-2026-103",
+    "lote": "LOTE-OCT-103",
+    "fCreacion": "14/10/2026 15:00:00",
+    "fRequerimiento": "25/10/2026",
+    "cantidad": 175,
+    "pUnidad": 1450,
+    "pTotal": 253750,
+    "iva": 48212.5,
+    "producto": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "observaciones": "Compra para distribución regional",
+      "prioridad": "baja",
+      "sede": "Cali"
+    }
+  },
+  {
+    "numero": "PED-2026-104",
+    "lote": "LOTE-OCT-104",
+    "fCreacion": "14/10/2026 16:00:00",
+    "fRequerimiento": "28/10/2026",
+    "cantidad": 80,
+    "pUnidad": 9200,
+    "pTotal": 736000,
+    "iva": 139840,
+    "producto": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "observaciones": "Reposicion de productos de higiene",
+      "prioridad": "urgente",
+      "sede": "Bucaramanga"
+    }
+  }
+]
+
+
+// Conductores
+[
+  {
+    "nombres": "Juan David",
+    "apellidos": "Moreno Castillo",
+    "t_documento": "CC",
+    "n_documento": "1032456789",
+    "arl": "Sura",
+    "eps": "Sanitas",
+    "telefono": "3004567890",
+    "placa": "ABC123",
+    "tVehiculo": "Camion",
+    "usuario": "ID generado por Mongo"
+  },
+  {
+    "nombres": "Andres Felipe",
+    "apellidos": "Ramirez Torres",
+    "t_documento": "CC",
+    "n_documento": "1023456789",
+    "arl": "Colmena",
+    "eps": "Nueva EPS",
+    "telefono": "3105678901",
+    "placa": "KLM456",
+    "tVehiculo": "Tractocamion",
+    "usuario": "ID generado por Mongo"
+  },
+  {
+    "nombres": "Maria Fernanda",
+    "apellidos": "Lopez Herrera",
+    "t_documento": "CE",
+    "n_documento": "E987654321",
+    "arl": "Bolivar",
+    "eps": "Compensar",
+    "telefono": "3206789012",
+    "placa": "XYZ789",
+    "tVehiculo": "Camioneta",
+    "usuario": "ID generado por Mongo"
+  },
+  {
+    "nombres": "Carlos Eduardo",
+    "apellidos": "Vargas Mendoza",
+    "t_documento": "PAS",
+    "n_documento": "PA1234567",
+    "arl": "Positiva",
+    "eps": "Famisanar",
+    "telefono": "3157890123",
+    "placa": "PQR321",
+    "tVehiculo": "Furgon",
+    "usuario": "ID generado por Mongo"
+  }
+]
+
+
+//recepciones
+[
+  {
+    "remision": "REM-OCT-001",
+    "fRecogida": "18/10/2026",
+    "hRecogida": "08:15:00",
+    "vEstimado": "1200",
+    "fLlegada": "19/10/2026",
+    "hLlegada": "14:30:00",
+    "lote": "REC-LOTE-201",
+    "fFabricacion": "01/09/2026",
+    "fVencimiento": "01/09/2028",
+    "cantidad": 120,
+    "pUnidad": 2800,
+    "pTotal": 336000,
+    "iva": 63840,
+    "producto": "ID generado por Mongo",
+    "conductor": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "tipoTransporte": "Terrestre",
+      "estado": "En transito",
+      "observaciones": "Recepcion de mercancia programada"
+    }
+  },
+  {
+    "remision": "REM-OCT-002",
+    "fRecogida": "20/10/2026",
+    "hRecogida": "06:45:00",
+    "vEstimado": "2500",
+    "fLlegada": "21/10/2026",
+    "hLlegada": "11:20:00",
+    "lote": "REC-LOTE-202",
+    "fFabricacion": "15/08/2026",
+    "fVencimiento": "15/08/2028",
+    "cantidad": 240,
+    "pUnidad": 1950,
+    "pTotal": 468000,
+    "iva": 88920,
+    "producto": "ID generado por Mongo",
+    "conductor": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "tipoTransporte": "Terrestre",
+      "estado": "Recogido",
+      "observaciones": "Carga farmacéutica para distribución"
+    }
+  },
+  {
+    "remision": "REM-OCT-003",
+    "fRecogida": "22/10/2026",
+    "hRecogida": "09:30:00",
+    "vEstimado": "1800",
+    "fLlegada": "23/10/2026",
+    "hLlegada": "16:10:00",
+    "lote": "REC-LOTE-203",
+    "fFabricacion": "10/07/2026",
+    "fVencimiento": "10/07/2028",
+    "cantidad": 175,
+    "pUnidad": 1350,
+    "pTotal": 236250,
+    "iva": 44887.5,
+    "producto": "ID generado por Mongo",
+    "conductor": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "tipoTransporte": "Terrestre",
+      "estado": "Pendiente de descarga",
+      "observaciones": "Transporte de suplemento nutricional"
+    }
+  },
+  {
+    "remision": "REM-OCT-004",
+    "fRecogida": "24/10/2026",
+    "hRecogida": "07:30:00",
+    "vEstimado": "3200",
+    "fLlegada": "25/10/2026",
+    "hLlegada": "13:45:00",
+    "lote": "REC-LOTE-204",
+    "fFabricacion": "05/10/2026",
+    "fVencimiento": "05/10/2028",
+    "cantidad": 90,
+    "pUnidad": 7800,
+    "pTotal": 702000,
+    "iva": 133380,
+    "producto": "ID generado por Mongo",
+    "conductor": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "tipoTransporte": "Terrestre",
+      "estado": "Programado",
+      "observaciones": "Traslado de productos de higiene"
+    }
+  }
+]
+
+
+//Inventario
+[
+  {
+    "fecha": "19/10/2026 14:30:00",
+    "tMovimiento": "ENT",
+    "cantidad": 120,
+    "stock": 120,
+    "producto": "ID generado por Mongo",
+    "recepcion": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "motivo": "Ingreso inicial de mercancia",
+      "ubicacion": "Bodega principal",
+      "observaciones": "Entrada por recepcion de proveedor"
+    }
+  },
+  {
+    "fecha": "21/10/2026 11:30:00",
+    "tMovimiento": "ENT",
+    "cantidad": 240,
+    "stock": 240,
+    "producto": "ID generado por Mongo",
+    "recepcion": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "motivo": "Recepcion de compra",
+      "ubicacion": "Bodega de medicamentos",
+      "observaciones": "Ingreso de ibuprofeno"
+    }
+  },
+  {
+    "fecha": "23/10/2026 16:10:00",
+    "tMovimiento": "SAL",
+    "cantidad": 35,
+    "stock": 205,
+    "producto": "ID generado por Mongo",
+    "recepcion": "",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "motivo": "Despacho interno",
+      "ubicacion": "Bodega de suplementos",
+      "observaciones": "Salida para distribucion"
+    }
+  },
+  {
+    "fecha": "25/10/2026 13:45:00",
+    "tMovimiento": "ENT",
+    "cantidad": 90,
+    "stock": 90,
+    "producto": "ID generado por Mongo",
+    "recepcion": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "motivo": "Reposicion de inventario",
+      "ubicacion": "Almacen de higiene",
+      "observaciones": "Ingreso de gel antibacterial"
+    }
+  }
+]
+
+
+//cross-dockings
+[
+  {
+    "numero": "DOC-2026-13",
+    "fInicio": "01/11/2026",
+    "hInicio": "08:00:00",
+    "fFin": "01/11/2026",
+    "hFin": "10:30:00",
+    "tEstancia": 150,
+    "estado": "Finalizado",
+    "aAsignada": "Muelle-13",
+    "producto": "ID generado por Mongo",
+    "pedido": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "tipoOperacion": "Recepcion",
+      "observaciones": "Descarga de acetaminofen",
+      "zona": "Bodega central"
+    }
+  },
+  {
+    "numero": "DOC-2026-14",
+    "fInicio": "02/11/2026",
+    "hInicio": "07:15:00",
+    "fFin": "02/11/2026",
+    "hFin": "09:45:00",
+    "tEstancia": 150,
+    "estado": "Finalizado",
+    "aAsignada": "Muelle-14",
+    "producto": "ID generado por Mongo",
+    "pedido": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "tipoOperacion": "Descarga",
+      "observaciones": "Recepcion de ibuprofeno",
+      "zona": "Almacen farmaceutico"
+    }
+  },
+  {
+    "numero": "DOC-2026-15",
+    "fInicio": "03/11/2026",
+    "hInicio": "10:20:00",
+    "fFin": "03/11/2026",
+    "hFin": "13:00:00",
+    "tEstancia": 160,
+    "estado": "En proceso",
+    "aAsignada": "Muelle-15",
+    "producto": "ID generado por Mongo",
+    "pedido": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "tipoOperacion": "Abastecimiento",
+      "observaciones": "Recepcion de vitamina C",
+      "zona": "Almacen de suplementos"
+    }
+  },
+  {
+    "numero": "DOC-2026-16",
+    "fInicio": "04/11/2026",
+    "hInicio": "13:30:00",
+    "fFin": "04/11/2026",
+    "hFin": "16:00:00",
+    "tEstancia": 150,
+    "estado": "Programado",
+    "aAsignada": "Muelle-16",
+    "producto": "ID generado por Mongo",
+    "pedido": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "tipoOperacion": "Almacenamiento",
+      "observaciones": "Recepcion de gel antibacterial",
+      "zona": "Almacen de higiene"
+    }
+  }
+]
+
+
+// Alistamientos
+[
+  {
+    "numero": "ALI-2026-01",
+    "tipo": "Preparacion",
+    "lote": "ALIS-OCT-301",
+    "fInicio": "05/11/2026",
+    "hInicio": "08:10:00",
+    "fFin": "05/11/2026",
+    "hFin": "09:25:00",
+    "estado": "Finalizado",
+    "aAsignada": "Zona-01",
+    "producto": "ID generado por Mongo",
+    "pedido": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "actividad": "Preparacion de acetaminofen",
+      "ubicacion": "Area de alistamiento A",
+      "observaciones": "Pedido institucional listo para despacho"
+    }
+  },
+  {
+    "numero": "ALI-2026-02",
+    "tipo": "Picking",
+    "lote": "ALIS-OCT-302",
+    "fInicio": "06/11/2026",
+    "hInicio": "07:30:00",
+    "fFin": "06/11/2026",
+    "hFin": "09:00:00",
+    "estado": "Finalizado",
+    "aAsignada": "Zona-02",
+    "producto": "ID generado por Mongo",
+    "pedido": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "actividad": "Seleccion de ibuprofeno",
+      "ubicacion": "Area de alistamiento B",
+      "observaciones": "Productos verificados y clasificados"
+    }
+  },
+  {
+    "numero": "ALI-2026-03",
+    "tipo": "Empaque",
+    "lote": "ALIS-OCT-303",
+    "fInicio": "07/11/2026",
+    "hInicio": "10:15:00",
+    "fFin": "07/11/2026",
+    "hFin": "11:40:00",
+    "estado": "En proceso",
+    "aAsignada": "Zona-03",
+    "producto": "ID generado por Mongo",
+    "pedido": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "actividad": "Empaque de vitamina C",
+      "ubicacion": "Area de alistamiento C",
+      "observaciones": "Pendiente de inspeccion final"
+    }
+  },
+  {
+    "numero": "ALI-2026-04",
+    "tipo": "Etiquetado",
+    "lote": "ALIS-OCT-304",
+    "fInicio": "08/11/2026",
+    "hInicio": "13:30:00",
+    "fFin": "08/11/2026",
+    "hFin": "15:10:00",
+    "estado": "Programado",
+    "aAsignada": "Zona-04",
+    "producto": "ID generado por Mongo",
+    "pedido": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "actividad": "Etiquetado de gel antibacterial",
+      "ubicacion": "Area de alistamiento D",
+      "observaciones": "Preparacion para distribucion regional"
+    }
+  }
+]
+
+
+//Despachos
+[
+  {
+    "remision": "DES-OCT-001",
+    "fRecogida": "09/11/2026",
+    "hRecogida": "08:00:00",
+    "vEstimado": "1500",
+    "fLlegada": "10/11/2026",
+    "hLlegada": "11:30:00",
+    "lote": "DES-LOTE-401",
+    "fFabricacion": "01/09/2026",
+    "fVencimiento": "01/09/2028",
+    "producto": "ID generado por Mongo",
+    "conductor": "ID generado por Mongo",
+    "pedido": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "tipoTransporte": "Camion",
+      "destino": "Bogota",
+      "estadoDespacho": "En transito",
+      "observaciones": "Despacho de acetaminofen"
+    }
+  },
+  {
+    "remision": "DES-OCT-002",
+    "fRecogida": "11/11/2026",
+    "hRecogida": "06:45:00",
+    "vEstimado": "2200",
+    "fLlegada": "12/11/2026",
+    "hLlegada": "10:15:00",
+    "lote": "DES-LOTE-402",
+    "fFabricacion": "15/08/2026",
+    "fVencimiento": "15/08/2028",
+    "producto": "ID generado por Mongo",
+    "conductor": "ID generado por Mongo",
+    "pedido": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "tipoTransporte": "Tractocamion",
+      "destino": "Medellin",
+      "estadoDespacho": "Programado",
+      "observaciones": "Despacho de ibuprofeno"
+    }
+  },
+  {
+    "remision": "DES-OCT-003",
+    "fRecogida": "13/11/2026",
+    "hRecogida": "09:20:00",
+    "vEstimado": "1800",
+    "fLlegada": "14/11/2026",
+    "hLlegada": "14:40:00",
+    "lote": "DES-LOTE-403",
+    "fFabricacion": "10/07/2026",
+    "fVencimiento": "10/07/2028",
+    "producto": "ID generado por Mongo",
+    "conductor": "ID generado por Mongo",
+    "pedido": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "tipoTransporte": "Camioneta",
+      "destino": "Cali",
+      "estadoDespacho": "En preparacion",
+      "observaciones": "Despacho de vitamina C"
+    }
+  },
+  {
+    "remision": "DES-OCT-004",
+    "fRecogida": "15/11/2026",
+    "hRecogida": "07:10:00",
+    "vEstimado": "3000",
+    "fLlegada": "16/11/2026",
+    "hLlegada": "12:50:00",
+    "lote": "DES-LOTE-404",
+    "fFabricacion": "05/10/2026",
+    "fVencimiento": "05/10/2028",
+    "producto": "ID generado por Mongo",
+    "conductor": "ID generado por Mongo",
+    "pedido": "ID generado por Mongo",
+    "usuario": "ID generado por Mongo",
+    "data": {
+      "tipoTransporte": "Furgon",
+      "destino": "Bucaramanga",
+      "estadoDespacho": "Pendiente de entrega",
+      "observaciones": "Despacho de gel antibacterial"
+    }
+  }
+]
